@@ -16,7 +16,7 @@
   "author": "Zach Bruggeman <talkto@zachbruggeman.me>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/remixz/l10-out-of-10n/issues"
+    "url": "https://github.com/remixz/l10n-html/issues"
   },
   "dependencies": {
     "cheerio": "~0.12.2",
