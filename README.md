@@ -58,3 +58,9 @@ var translated = l10n(document.querySelector('body'), {
 ```bash
 browserify browser.js > bundle.js
 ```
+
+### Testing
+
+```bash
+make test # tests the server version
+make browser-test # compiles and opens the browser test
