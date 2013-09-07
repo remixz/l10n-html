@@ -1,5 +1,5 @@
 test:
-	tap test/server/*.js
+	tape test/server/*.js
 
 browser-test:
 	browserify test/browser/test.js | testling
