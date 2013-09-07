@@ -12,11 +12,9 @@
 var selectn = require('selectn');
 
 module.exports = function (source, bundle) {
-
     var elems = source.querySelectorAll('[data-l10n]');
     for (var i = 0; i < elems.length; i++) {
         elems[i].innerText = selectn(elems[i].getAttribute('data-l10n'), bundle);
     }
     return elems;
-
 };

@@ -20,11 +20,10 @@ module.exports = function (source, bundle, opts) {
         stripDataAttributes: true
     });
 
-    var $;
     if (typeof source === 'string') {
-        $ = cheerio.load(source);
+        var $ = cheerio.load(source);
     } else {
-        $ = source;
+        var $ = source;
     }
 
     $('*[data-l10n]').each(function (i, el) {
