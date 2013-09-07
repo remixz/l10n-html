@@ -34,8 +34,9 @@ async.auto({
         });
 
         test('Cheerio transform test', function (t) {
-            t.plan(1);
+            t.plan(2);
             t.equal(typeof obj.transform_cheerio, 'function', 'should return a function');
+            t.equal(obj.transform_cheerio.html(), '<p>Bonjour!</p><p>Tout le monde.</p>', 'results should be correct');
             t.end();    
         });
 
