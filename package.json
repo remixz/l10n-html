@@ -32,10 +32,10 @@
   "testling": {
     "files": "test/browser/*.js",
     "browsers": {
-      "iexplore": ["8" ,"9", "10"],
-      "chrome": ["25"],
-      "firefox": ["19"],
-      "safari": ["6"]
+      "iexplore": ["8.0" ,"9.0", "10.0"],
+      "chrome": ["25.0"],
+      "firefox": ["19.0"],
+      "safari": ["6.0"]
     }
   }
 }
