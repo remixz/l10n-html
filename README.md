@@ -1,6 +1,6 @@
 ## l10n-html [![Build Status](https://travis-ci.org/remixz/l10n-html.png?branch=master)](https://travis-ci.org/remixz/l10n-html)
 
-A module that makes localization much friendlier, by writing the localizations in the HTML. Browser and server ready!
+A module that makes localization much friendlier by using HTML attributes, instead of a template system. Browser and server ready!
 
 [![Testling Badge](https://ci.testling.com/remixz/l10n-html.png)](https://ci.testling.com/remixz/l10n-html)
 
@@ -21,7 +21,7 @@ Bower will expose l10n-html as `l10nHTML()`.
 
 ### Explanation
 
-`l10n-html` attempts to make localization of web pages a much friendlier experience. It allows you to write all of your code in your preferred language, without any need for templating helpers. Instead, any HTML tag that needs to be localized will have a `data-l10n` attribute, containing a key to access a translation from a JS object. This module is designed to be extended on, and can be easily integrated into modules that provide convenience layers over this, like automatically detecting the correct language from a web request.
+`l10n-html` attempts to make localization of web pages a much friendlier experience. It allows you to write all of your code in your preferred language, without any need for a template language. Instead, any HTML tag that needs to be localized will have a `data-l10n` attribute, containing a key to access a translation from a JS object. I personally find this is nicer to develop on, since it's much easier to read over the source. This module is designed to be extended on, and can be easily integrated into modules that provide convenience layers over this, like automatically detecting the correct language from a web request.
 
 ### Usage
 
@@ -77,6 +77,7 @@ browserify browser.js > bundle.js
 ### Testing
 
 ```bash
+[sudo] npm install -g tape testling
 make test # tests the server version
 make browser-test # compiles and opens the browser test
 ```
