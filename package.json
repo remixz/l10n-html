@@ -1,0 +1,32 @@
+{
+  "name": "l10n-html",
+  "version": "0.0.1",
+  "description": "A module that creates localized HTML.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remixz/l10n-html.git"
+  },
+  "keywords": [
+    "localization"
+  ],
+  "author": "Zach Bruggeman <talkto@zachbruggeman.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/remixz/l10-out-of-10n/issues"
+  },
+  "dependencies": {
+    "cheerio": "~0.12.2",
+    "lodash": "~1.3.1",
+    "selectn": "~0.8.6"
+  },
+  "browserify": "browser.js",
+  "devDependencies": {
+    "async": "~0.2.9",
+    "tape": "~1.1.0",
+    "browserify": "~2.29.1"
+  }
+}
