@@ -15,7 +15,7 @@ Or for you crazy Bower kids:
 ```bash
 bower install l10n-html
 ```
-Bower will expose l10n-html as l10nHTML.
+Bower will expose l10n-html as `l10nHTML()`.
 
 ### Explanation
 
