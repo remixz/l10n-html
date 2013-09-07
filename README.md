@@ -77,3 +77,4 @@ browserify browser.js > bundle.js
 ```bash
 make test # tests the server version
 make browser-test # compiles and opens the browser test
+```
