@@ -1,7 +1,7 @@
 {
   "name": "l10n-html",
   "main": "dist/l10n-html.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/remixz/l10n-html",
   "authors": [
     "Zach Bruggeman <zbruggeman@me.com>"
