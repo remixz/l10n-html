@@ -4,6 +4,19 @@ A module that makes localization much friendlier, by writing the localizations i
 
 [![NPM](https://nodei.co/npm/l10n-html.png)](https://nodei.co/npm/l10n-html/)
 
+### Installation
+
+NPM:
+```bash
+npm install l10n-html
+```
+
+Or for you crazy Bower kids:
+```bash
+bower install l10n-html
+```
+Bower will expose l10n-html as l10nHTML.
+
 ### Explanation
 
 `l10n-html` attempts to make localization of web pages a much friendlier experience. It allows you to write all of your code in your preferred language, without any need for templating helpers. Instead, any HTML tag that needs to be localized will have a `data-l10n` attribute, containing a key to access a translation from a JS object. This module is designed to be extended on, and can be easily integrated into modules that provide convenience layers over this, like automatically detecting the correct language from a web request.
