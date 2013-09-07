@@ -2,6 +2,8 @@
 
 A module that makes localization much friendlier, by writing the localizations in the HTML. Browser and server ready!
 
+[![Testling Badge](https://ci.testling.com/remixz/l10n-html.png)](https://ci.testling.com/remixz/l10n-html)
+
 [![NPM](https://nodei.co/npm/l10n-html.png)](https://nodei.co/npm/l10n-html/)
 
 ### Installation
