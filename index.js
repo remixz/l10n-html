@@ -28,7 +28,7 @@ module.exports = function (source, bundle, opts) {
 
     $('*[data-l10n]').each(function (i, el) {
         var key = $(this).attr('data-l10n');
-        $(this).text(selectn(key, bundle));
+        $(this).html(selectn(key, bundle));
         if (opts.stripDataAttributes) $(this).removeAttr('data-l10n');
     });
 
