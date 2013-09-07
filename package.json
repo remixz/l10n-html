@@ -28,5 +28,14 @@
     "async": "~0.2.9",
     "tape": "~1.1.0",
     "browserify": "~2.29.1"
+  },
+  "testling": {
+    "files": "test/browser/*.js",
+    "browsers": {
+      "iexplore": ["8" ,"9", "10"],
+      "chrome": ["25"],
+      "firefox": ["19"],
+      "safari": ["6"]
+    }
   }
 }
