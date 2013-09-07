@@ -1,8 +1,6 @@
-## l10n-html
+## l10n-html [![Build Status](https://travis-ci.org/remixz/l10n-html.png?branch=master)](https://travis-ci.org/remixz/l10n-html)
 
 A module that makes localization much friendlier, by writing the localizations in the HTML. Browser and server ready!
-
-[![Build Status](https://travis-ci.org/remixz/l10n-html.png?branch=master)](https://travis-ci.org/remixz/l10n-html)
 
 [![NPM](https://nodei.co/npm/l10n-html.png)](https://nodei.co/npm/l10n-html/)
 
