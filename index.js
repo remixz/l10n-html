@@ -9,13 +9,13 @@
  * @author Zach Bruggeman <talkto@zachbruggeman.me>
  */
 
-var _       = require('lodash');
-var cheerio = require('cheerio');
-var selectn = require('selectn');
+var defaults = require('lodash.defaults');
+var cheerio  = require('cheerio');
+var selectn  = require('selectn');
 
 module.exports = function (source, bundle, opts) {
     if (opts === undefined) opts = {};
-    _.defaults(opts, {
+    defaults(opts, {
         returnCheerio: false,
         stripDataAttributes: true
     });
@@ -26,15 +26,12 @@ module.exports = function (source, bundle, opts) {
         var $ = source;
     }
 
-    $('*[data-l10n]').each(function (i, el) {
+    $('[data-l10n]').each(function (i, el) {
         var key = $(this).attr('data-l10n');
         $(this).html(selectn(key, bundle));
         if (opts.stripDataAttributes) $(this).removeAttr('data-l10n');
     });
 
-    if (opts.returnCheerio) {
-        return $;
-    } else {
-        return $.html();
-    }
+    if (opts.returnCheerio) return $;
+    return $.html();
 };
